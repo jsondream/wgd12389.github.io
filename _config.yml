@@ -1,38 +1,33 @@
-# Site settings
-title: JsonDream blog
-email: jsondream@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://jsondream.com" # the base hostname & protocol for your site
-
-
-# Sidebar filter
-# Choose 'tag' or 'category' as filter in sidebar.
-filter: 'category'
-
-
-# Social account
-# twitter:  username
-# weibo:    ID
-# github:   username
-# codepen:  username
-# dribbble: username
-
-
-# Comment
-disqus_shortname: jsondream
-
-
-# Google Analytics
-# google_analytics: tracking_ID
-
-
-# Build settings
+permalink: /:year/:month/:day/:title.html
 markdown: kramdown
-sass:
-  style: compressed
-gems:
-  - jekyll-sitemap
+pygments: true
+
+kramdown:
+  input: GFM
+
+# 作者信息
+author: 
+  name: 王光东
+  email: jsondream@gmail.com
+  link: http://www.jsondream.com
+  weibo: http://weibo.com/u/1829980775?is_all=1
+  github: http://github.com/wgd12389
+
+# 站点信息
+title: 王光东的博客 
+description: 王光东的博客
+url: http://www.jsondream.com
+rss_url: /pages/atom.xml
+
+# avatar头像及Favicon
+avatar: http://7u2ho6.com1.z0.glb.clouddn.com/site-avatar.png
+favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
+
+# google analytics 设置
+ga:
+  id: UA-54767140-1
+  url: www.jsondream.com
+
+# disqus 设置
+disqus:
+  shortname: jsondream
