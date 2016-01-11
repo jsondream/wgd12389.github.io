@@ -10,7 +10,7 @@ description: redis在mac上的安装和使用
 1.设置你的代理仓库  
 1.1.进入到~/.m2文件夹下，查看`settings.xml`文件(`如果m2文件不存在的话,在你的项目中执行一次maven命令的操作即可创建m2文件`)  
 1.1.1如果`settings.xml`文件存在  
-将如下的标签和值合入到`settings.xml`
+将如下的标签和值合入到`settings.xml`  
 ```xml
    <profiles>
         <profile>
@@ -68,15 +68,15 @@ description: redis在mac上的安装和使用
 ```
 
 1.1.2如果`settings.xml`文件不存在则创建该文件  
-在该文件中建立
+在该文件中建立  
 ```xml
 <settings>
 </settings>
-```
+```  
 在`settings`标签中写入1.1.1的值  
 2.进入到你的maven安装目录下的conf文件夹下  
 2.1.修改你的`settings.xml`文件  
-在你的`servers`标签下加入如下的内容
+在你的`servers`标签下加入如下的内容  
 ```xml
        <server>
           <id>releases</id>
