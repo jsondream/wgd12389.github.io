@@ -20,8 +20,8 @@ url: http://www.jsondream.com
 rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
-avatar: http://7xpz5v.com1.z0.glb.clouddn.com/IMG_0003.JPEG
-favicon: http://7xpz5v.com1.z0.glb.clouddn.com/IMG_0003.JPEG
+avatar: http://7xpz5v.com1.z0.glb.clouddn.com/%E5%A4%B4%E5%83%8F.JPEG
+favicon: http://7xpz5v.com1.z0.glb.clouddn.com/%E5%A4%B4%E5%83%8F.JPEG
 
 # google analytics 设置
 ga:
