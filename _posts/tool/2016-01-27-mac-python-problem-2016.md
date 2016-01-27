@@ -7,7 +7,7 @@ keywords: mac,sip,python
 description: python安装中遇到的梗
 ---
    
-## scrapy的安装
+## scrapy的安装  
 ### 场景描述  
 最近公司业务不是很忙,想从网上找点资料出来,用来.....(你懂得,,,别想歪,我是正经人!)  
 由于本人是做java的,之前一直在用jsoup来玩爬虫,听说python的scrapy爬虫简直就是搜易贼(so easy)。  
@@ -63,8 +63,8 @@ sudo pip install six
 ok,我们把six的版本也更新完了,哪这时候我们再试下安装scrapy把.    
 这时候会提示你`installation successful`,那就恭喜你成功的解决了sip,并安装了scrapy.  
 
-## python3的安装  
-### 需求描述  
+## python3的安装   
+### 需求描述   
 大家应该都知道MAC OS X EI Capitan 系统 支持 python的多版本共存,即在我们的环境变量中可以配置python2和python3。  
 ### 安装过程  
 1. 先安装python3,如果你安装了[homebrew](http://brew.sh/),那么你只需要输入一条命令`brew install python3`即可安装python3     
