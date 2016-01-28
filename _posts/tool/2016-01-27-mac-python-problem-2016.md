@@ -8,12 +8,15 @@ description: python安装中遇到的梗
 ---
    
 ## scrapy的安装  
+
 ### 场景描述  
 最近公司业务不是很忙,想从网上找点资料出来,用来.....(你懂得,,,别想歪,我是正经人!)  
 由于本人是做java的,之前一直在用jsoup来玩爬虫,听说python的scrapy爬虫简直就是搜易贼(so easy)。  
 哪就走起吧.  
+
 ### 配置状况  
 我用的mac版本是OS X EI capitan。  
+
 ### 问题描述  
 本机自带了python2.7，直接安装scrapy就可以了，
 不过在安装scrapy之前要先确定你的电脑是否已经安装了pip。  
@@ -29,6 +32,7 @@ pip 和 easy_install 都是 Python 的框架管理命令，pip 是对 easy_insta
 >OSError: [Errno 1] Operation not permitted: '/tmp/pip-Tz8iWw-uninstall/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/six-1.4.1-py2.7.egg-info'  
 
 ### 故障定位  
+
 我google了好久,查了好多原因,试了很多种办法发现都没说道点子上,最后在以为大神的博客里找到了原因   
  
 >Because six ships with the system, and almost every popular python project uses it for forwards compatibility, pip tries to upgrade the version it finds first in the python path. Since SIP blocks this, it fails.
@@ -36,6 +40,7 @@ Any python dependencies system software has should be hard-coded, and the defaul
   
 [原文传送门](http://www.openradar.me/radar?id=6192110889861120)  
 这时候,我们知道了新版的mac系统增加了sip特性,即使使用 sudo 也无法使获得最高权限，无法对 MAC 系统级的目录进行更改  
+
 ### 解决问题  
 既然我们已经发现问题出现在sip上了,那我们把sip特性关闭了不就完了么,那么我们怎么关闭sip特性呢。  
 
@@ -64,8 +69,10 @@ ok,我们把six的版本也更新完了,哪这时候我们再试下安装scrapy�
 这时候会提示你`installation successful`,那就恭喜你成功的解决了sip,并安装了scrapy.  
 
 ## python3的安装   
+
 ### 需求描述   
 大家应该都知道MAC OS X EI Capitan 系统 支持 python的多版本共存,即在我们的环境变量中可以配置python2和python3。  
+
 ### 安装过程  
 1. 先安装python3,如果你安装了[homebrew](http://brew.sh/),那么你只需要输入一条命令`brew install python3`即可安装python3     
 2. 此时你可以输入python3试试,但是你发现这时候系统会提示命令找不到(你都没配置python3,系统找个毛啊)    
@@ -93,9 +100,4 @@ Python 3.5.0 (default, Sep 23 2015, 04:41:38)
 Type "help", "copyright", "credits" or 
 "license" for more information.
 ```
-
-
-
-
-
 
