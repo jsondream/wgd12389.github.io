@@ -41,7 +41,7 @@ description: gitlab迁移数据和服务器遇到的坑
 4. 修改`url`参数的值为新的仓库地址   
 5. 提交一个代码测试下,卧槽,报错了？什么错误,让我们来看一看  
  
-	``` shell   
+	```   
     remo@remo:/qualcomm/jenkins/r1528_ap/oe-core$ git push  
     Counting objects: 10, done.
     Delta compression using up to 4 threads.
@@ -68,5 +68,7 @@ description: gitlab迁移数据和服务器遇到的坑
 `chmod -R g+rwX .`赋给用户组读写可执行的权限        
 `find . -type d -exec chmod g+s '{}' +`	  
 如果刚才的操作没生效的话,再输入`git config core.sharedRepository`或者`git config core.sharedRepository group`	 
-3. 提交代码进行测试,ok了   
+ 
+3. 提交代码进行测试,ok了  
+ 
 4. [参考链接1](http://stackoverflow.com/questions/6448242/git-push-error-insufficient-permission-for-adding-an-object-to-repository-datab)        [参考链接2](https://github.com/deis/deis/issues/1843)
