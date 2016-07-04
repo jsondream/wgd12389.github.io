@@ -10,7 +10,7 @@ description: java8利用lambda表达式来封装jedis的连接池资源
 
 ### lambda表达式  
 
-***什么是lambda？*** 
+***什么是lambda？***   
 > “Lambda 表达式”(lambda expression)是一个匿名函数，Lambda表达式基于数学中的λ演算得名，直接对应于其中的lambda抽象(lambda abstraction)，是一个匿名函数，即没有函数名的函数。Lambda表达式可以表示闭包（注意和数学传统意义上的不同）。  
 
 ### 需求点  
