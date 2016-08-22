@@ -38,7 +38,7 @@ package.json的[下载地址](https://raw.githubusercontent.com/twbs/bootstrap/m
 
 ### 配置第二个项目  
 
-当我们配置第二个项目的时候我们只需要进入到对应的`.git`文件夹下，输入如下的命令`commitizen init cz-conventional-changelog --force`  
+当我们配置第二个项目的时候我们只需要进入到对应的项目目录下，输入如下的命令`commitizen init cz-conventional-changelog --force`  
 我们就可以使用`git cz`命令了  
 
 
