@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [转]分布式系统原理
+title: (转)分布式系统原理
 category: 技术
 tags: [tech]
 keywords: 分布式
