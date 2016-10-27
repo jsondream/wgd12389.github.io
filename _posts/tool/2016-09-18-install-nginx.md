@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 那些年,我们用mac遇到的梗
+title: nginx的安装
 category: 工具
 tags: [tool]
 keywords: mac,sip,python
-description: python安装中遇到的梗
+description: nginx的安装
 ---
    
 ## nginx的安装   
