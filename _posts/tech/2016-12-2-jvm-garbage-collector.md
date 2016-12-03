@@ -29,6 +29,7 @@ description: 《深入理解jvm》读书笔记之——GC收集器
 `parallel scavenge`主要就是关注吞吐量。    
 所谓吞吐量：运行用户代码的世界/(运行用户代码时间+GC花费的时间)。    
 parallel scavenge收集器中，提供了2个参数来控制吞吐量：    
+
 - `-XX:GCTimeRatio`：gc时间占用的总比例，也就是吞吐量的倒数。           
 - `-XX:MaxGCPauseMillis`：最大的暂停毫秒数（这个数值并非越小越好，如果把他设置小了，系统会根据这个值调整空间的大小，也就会加快GC的频率）       
 
@@ -39,6 +40,7 @@ parallel scavenge收集器中，提供了2个参数来控制吞吐量：
 ## 4、serial old收集器     
 
 serial收集器的老年代版本，使用标记整理算法，主要有两个作用：   
+
 - jdk5之前和parallel scavenge配合使用     
 - 作为cms失败的后备收集方案     
 
