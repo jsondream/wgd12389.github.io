@@ -86,6 +86,7 @@ redisson提供了lockInterruptibly(long leaseTime, TimeUnit unit)的时间限制
 
 相信了解过redis的都知道它有个发布订阅的功能      
 RedisSon是这么实现快速通知的：    
+
 > 获取锁的线程会去redis中发布一个key，然后所有没有取到锁的就去订阅相应的channel，来接收锁释放的通知，获取锁的释放了之后就会去这里发布释放的通知。收到消息的就会继续重试获取锁的过程      
 
 ### 性能问题     
@@ -102,7 +103,8 @@ redisson是吧获取锁的行为变成了一次hashset的操作
 
 ![redisson锁的代码](http://7xpz5v.com1.z0.glb.clouddn.com/redis-lock-redisson-step-2)     
 
-**这里就是核心的实现：**        
+**这里就是核心的实现：**      
+  
 > 上面lua代码中第一个if就是先尝试获取锁，如果获取成功就返回，如果不成功就判断要获取锁的线程，和持有锁的线程是否是同一个线程，如果是，那就在value上加个1，代表重入了一次，最后那个return的pttl其实是一个else逻辑，也就是说我既没有获取锁，也不是持有锁的那个线程，也就意味我获取锁失败，那我就返回一个过期时间的值     
 
 ## Redisson的流程简述      
