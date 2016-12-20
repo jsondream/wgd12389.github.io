@@ -1,11 +1,12 @@
 ---
 layout: post
-title:分布锁之《redis实现》
-category:技术
+title: 分布锁——redis实现
+category: 技术
 tags: [tech]
-keywords:lock,redisson
-description:分布锁——redis实现
+keywords: lock, redisson
+description: 分布锁——redis实现
 ---
+
 
 
 ## 分布式锁的场景   
