@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 细说延迟任务的处理
+title: 细说延时任务的处理
 category: 技术
 tags: [tech]
 keywords: delayQueue,delayTask,rabbitMq,wheelTimer,quartz
